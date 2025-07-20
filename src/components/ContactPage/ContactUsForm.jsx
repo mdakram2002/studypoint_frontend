@@ -175,8 +175,9 @@ export const ContactUsForm = () => {
         <button
           className="p-2 text-black font-bold bg-yellow-50 rounded-md drop-shadow-[0_1.5px_rgba(255,255,255,0.25)]"
           type="submit"
+          disabled={loading}
         >
-          Send Message
+          {loading ? "Sending..." : "Send Message"}
         </button>
       </div>
     </form>

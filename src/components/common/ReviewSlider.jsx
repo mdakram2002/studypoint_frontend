@@ -13,7 +13,6 @@ import "swiper/css/navigation";
 
 export const ReviewSlider = () => {
     const [reveiw, setReview] = useState([]);
-    const trucateWords = 15;
 
     // useEffect(() => {
     //     console.log("PRINTING REVIEW (after setReview):", reveiw);

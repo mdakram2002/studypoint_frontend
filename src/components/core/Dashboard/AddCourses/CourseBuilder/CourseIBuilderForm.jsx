@@ -117,7 +117,7 @@ export const CourseIBuilderForm = () => {
         <div className="mt-10 flex">
           <IconButtonModal
             type="submit"
-            text={editSectionName ? "Edit Section Name" : "Create Section"}
+            text={loading ? "Loading..." : (editSectionName ? "Edit Section Name" : "Create Section")}
             outline={true}
             className="text-white w-fit"
           >
