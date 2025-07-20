@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 import RatingStars from "react-rating-stars-component";
 import GetAvgRating from "../../../utils/avgRating";
 
-export const Course_Card = ({ course }) => {
+export const CourseCard = ({ course }) => {
   const [avgRatingCount, setAvgReviwCount] = useState(0);
 
   useEffect(() => {

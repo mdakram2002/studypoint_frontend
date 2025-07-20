@@ -6,7 +6,7 @@ import { useParams } from "react-router-dom";
 import { apiConnector } from "../services/apiConnector";
 import { categories } from "../services/apis";
 import { getCatalogPageData } from "../services/operations/pageAndComponentData";
-import { Course_Card } from "../components/core/Catalog/Course_Card";
+import { CourseCard } from "../components/core/Catalog/CourseCard";
 import { CourseSlider } from "../components/core/Catalog/CourseSlider";
 
 const Catalog = () => {
@@ -75,7 +75,7 @@ const Catalog = () => {
           </h2>
           <div className="grid gap-6 grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
             {selectedCategory?.courses?.map((course, i) => (
-              <Course_Card key={i} course={course} />
+              <CourseCard key={i} course={course} />
             ))}
           </div>
         </section>
@@ -95,7 +95,7 @@ const Catalog = () => {
           </h2>
           <div className="grid gap-6 grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
             {topSellingCourses?.slice(0, 8).map((course, index) => (
-              <Course_Card key={index} course={course} />
+              <CourseCard key={index} course={course} />
             ))}
           </div>
         </section>
